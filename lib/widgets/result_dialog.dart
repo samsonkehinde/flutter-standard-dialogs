@@ -118,8 +118,8 @@ class ResultDialog extends StatelessWidget {
 				children: [
 					ElevatedButton(
 						style: ElevatedButton.styleFrom(
-							primary: backgroundColor,
-							onPrimary: textColor,
+							backgroundColor: backgroundColor,
+							foregroundColor: textColor,
 							shape: RoundedRectangleBorder(
 								borderRadius: BorderRadius.circular(30.0)
 							)
