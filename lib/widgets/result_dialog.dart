@@ -79,7 +79,7 @@ class ResultDialog extends StatelessWidget {
 					(title != null 
 						? (title is Text 
 							? AnimatedDefaultTextStyle(
-								style: (title as Text).style ?? Theme.of(context).textTheme.headline6!.copyWith(color: textColor),
+								style: (title as Text).style ?? Theme.of(context).textTheme.titleLarge!.copyWith(color: textColor),
 								textAlign: (title as Text).textAlign ?? TextAlign.center,
 								duration: kThemeChangeDuration,
 								child: title!)
@@ -101,7 +101,7 @@ class ResultDialog extends StatelessWidget {
 			padding: const EdgeInsets.fromLTRB(24, 20, 24, 0),
 			child: (content is Text 
 				? AnimatedDefaultTextStyle(
-					style: (content as Text).style ?? Theme.of(context).textTheme.subtitle1!,
+					style: (content as Text).style ?? Theme.of(context).textTheme.titleMedium!,
 					duration: kThemeChangeDuration,
 					textAlign: (content as Text).textAlign ?? TextAlign.center,
 					child: content!)
