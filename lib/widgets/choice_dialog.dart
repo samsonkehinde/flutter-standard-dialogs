@@ -34,7 +34,7 @@ abstract class ChoiceDialog<T> extends StatefulWidget {
 	List<Widget> buildActions(BuildContext context, List<DialogChoice<T>> selectedChoices);
 
 	Widget buildTitle(BuildContext context, Widget title) {
-		return buildTextWithStyle(title, Theme.of(context).textTheme.subtitle1!);
+		return buildTextWithStyle(title, Theme.of(context).textTheme.titleMedium!);
 	}
 
 	Widget? buildDescription(BuildContext context, Widget? description) {
