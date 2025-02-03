@@ -34,7 +34,7 @@ abstract class ChoiceDialog<T> extends StatefulWidget {
 	List<Widget> buildActions(BuildContext context, List<DialogChoice<T>> selectedChoices);
 
 	Widget buildTitle(BuildContext context, Widget title) {
-		return buildTextWithStyle(title, Theme.of(context).textTheme.titleMedium!);
+		return buildTextWithStyle(title, Theme.of(context).textTheme.titleSmall!);
 	}
 
 	Widget? buildDescription(BuildContext context, Widget? description) {
@@ -45,7 +45,7 @@ abstract class ChoiceDialog<T> extends StatefulWidget {
 
 		return Padding(
 			padding: const EdgeInsetsDirectional.only(top: 2),
-			child: buildTextWithStyle(description, Theme.of(context).textTheme.titleMedium!)
+			child: buildTextWithStyle(description, Theme.of(context).textTheme.titleSmall!)
 		);
 
 	}
